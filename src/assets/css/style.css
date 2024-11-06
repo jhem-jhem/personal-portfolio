@@ -6,10 +6,6 @@
   --black: hsl(0, 0%, 0%);
   --white: hsl(0, 0%, 100%);
 
-  /**
-   * typography
-   */
-
   --ff-saira-stencil-one: "Saira Stencil One", sans-serif; 
   --ff-poppins: 'Poppins', sans-serif;
   --ff-roboto: 'Roboto', sans-serif;
@@ -25,21 +21,11 @@
   --fw-400: 400;
   --fw-700: 700;
 
-  /**
-   * transition
-   */
-
   --transition-1: 0.25s ease-in-out;
 
-  /**
-   * spacing
-   */
 
   --section-padding: 80px;
 
-  /**
-   * radius
-   */
 
   --radius-4: 4px;
   --radius-12: 12px;
@@ -48,11 +34,6 @@
 
 
 
-
-
-/*-----------------------------------*\
- * #THEME COLORS
-\*-----------------------------------*/
 
 body.dark_theme {
 
@@ -69,12 +50,18 @@ body.dark_theme {
 
 body.light_theme {
 
-  --bg-primary: hsl(0, 0%, 90%);
+  /* --bg-primary: hsl(0, 0%, 90%);
   --bg-secondary: hsl(0, 0%, 100%);
   --color-primary: hsl(0, 0%, 12%);
   --color-secondary: hsl(0, 0%, 37%);
   --card-shadow: hsla(0, 0%, 0%, 0.1);
-  --input-bg: hsl(0, 0%, 93%);
+  --input-bg: hsl(0, 0%, 93%); */
+  --bg-primary: hsl(0, 0%, 12%);
+  --bg-secondary: hsl(0, 0%, 19%);
+  --color-primary: hsl(0, 0%, 100%);
+  --color-secondary: hsl(0, 0%, 62%);
+  --card-shadow: hsla(0, 0%, 0%, 0.4);
+  --input-bg: hsl(0, 0%, 16%);
 
 
   --shadow-1: 10px 10px 40px var(--card-shadow);
@@ -84,10 +71,6 @@ body.light_theme {
 
 
 
-
-/*-----------------------------------*\
- * #RESET
-\*-----------------------------------*/
 
 *, *::before, *::after {
   margin: 0;
@@ -152,10 +135,6 @@ body.active { overflow: hidden; }
 
 
 
-
-/*-----------------------------------*\
- * #REUSED STYLE
-\*-----------------------------------*/
 
 .container { padding-inline: 10px; }
 
@@ -258,10 +237,6 @@ body.active { overflow: hidden; }
 
 
 
-
-/*-----------------------------------*\
- * #HEADER
-\*-----------------------------------*/
 
 .header {
   padding-block: 15px;
@@ -437,14 +412,10 @@ body.active { overflow: hidden; }
 
 
 
-/*-----------------------------------*\
- * #HERO
-\*-----------------------------------*/
-
 main { overflow-x: hidden; }
 
 .hero {
-  min-height: 130vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -471,9 +442,7 @@ main { overflow-x: hidden; }
 .hero .btn-primary { margin-inline: auto; }
 
 
-/*-----------------------------------*\
- * #STATS
-\*-----------------------------------*/
+
 
 .stats { padding-block: var(--section-padding); }
 
@@ -529,9 +498,6 @@ main { overflow-x: hidden; }
 
 
 
-/*-----------------------------------*\
- * #ABOUT
-\*-----------------------------------*/
 
 .about { padding-block: var(--section-padding); }
 
@@ -551,10 +517,6 @@ main { overflow-x: hidden; }
 
 
 
-
-/*-----------------------------------*\
- * #SKILLS
-\*-----------------------------------*/
 
 .skills { padding-block: var(--section-padding); }
 
@@ -641,9 +603,6 @@ main { overflow-x: hidden; }
 
 
 
-/*-----------------------------------*\
- * #PROJECT
-\*-----------------------------------*/
 
 .project { padding-block: var(--section-padding); }
 
@@ -712,10 +671,6 @@ main { overflow-x: hidden; }
 
 
 
-
-/*-----------------------------------*\
- * #CONTACT
-\*-----------------------------------*/
 
 .contact { padding-block: var(--section-padding); }
 
@@ -836,10 +791,6 @@ textarea.input-field {
 
 
 
-/*-----------------------------------*\
- * #FOOTER
-\*-----------------------------------*/
-
 .footer {
   background: var(--bg-secondary);
   padding-block: 20px;
@@ -863,9 +814,6 @@ textarea.input-field {
 
 
 
-/*-----------------------------------*\
- * #GO TO TOP
-\*-----------------------------------*/
 
 .go-top {
   position: fixed;
@@ -896,19 +844,8 @@ textarea.input-field {
 
 
 
-/*-----------------------------------*\
- * #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for larger than 550px screen
- */
-
 @media (min-width: 550px) {
 
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 550px;
@@ -917,11 +854,6 @@ textarea.input-field {
 
   .section-title { max-width: 380px; }
 
-
-
-  /**
-   * PROJECT
-   */
 
   .project-list {
     column-count: 2;
@@ -936,15 +868,10 @@ textarea.input-field {
 
 
 
-/**
- * responsive for larger than 768px screen
- */
 
 @media (min-width: 768px) {
 
-  /**
-   * REUSED STYLE
-   */
+ 
 
   .container { max-width: 720px; }
 
@@ -952,17 +879,10 @@ textarea.input-field {
 
 
 
-  /**
-   * STATS
-   */
 
   .stats-list { grid-template-columns: 1fr 1fr; }
 
 
-
-  /**
-   * ABOUT
-   */
 
   .btn-group {
     display: flex;
@@ -977,10 +897,6 @@ textarea.input-field {
 
 
 
-  /**
-   * CONTACT
-   */
-
   .contact-form {
     max-width: 450px;
     margin-inline: auto;
@@ -991,38 +907,22 @@ textarea.input-field {
 
 
 
-
-/**
- * responsive for larger than 992px screen
- */
-
 @media (min-width: 992px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
 
-    /**
-     * typography
-     */
+
 
     --fs-2: 3rem;
 
-    /**
-     * spacing
-     */
+
 
     --section-padding: 100px;
 
   }
 
 
-
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 980px; }
 
@@ -1047,10 +947,6 @@ textarea.input-field {
   }
 
 
-
-  /**
-   * HEADER
-   */
 
   .header { padding-block: 30px; }
 
@@ -1087,10 +983,6 @@ textarea.input-field {
   .navbar-link::before { height: 2px; }
 
 
-
-  /**
-   * HERO
-   */
 
   .hero {
     position: relative;
@@ -1185,10 +1077,6 @@ textarea.input-field {
 
 
 
-  /**
-   * STATS
-   */
-
   .stats-list { grid-template-columns: repeat(3, 1fr); }
 
   .stats-card { height: 100%; }
@@ -1196,9 +1084,6 @@ textarea.input-field {
 
 
 
-  /**
-   * ABOUT
-   */
 
   .about {
     display: grid;
@@ -1209,12 +1094,6 @@ textarea.input-field {
 
   .about-banner { margin-bottom: 0; }
 
-
-
-
-  /**
-   * SKILLS
-   */
 
   .skills {
     display: grid;
@@ -1228,11 +1107,6 @@ textarea.input-field {
   .skills-toggle { margin-inline: 0; }
 
 
-
-  /**
-   * PROJECT
-   */
-
   .project-list { column-count: 3; }
 
   .project-list > li:first-child {
@@ -1242,10 +1116,6 @@ textarea.input-field {
   }
 
 
-
-  /**
-   * CONTACT
-   */
 
   .contact {
     display: grid;
@@ -1261,10 +1131,6 @@ textarea.input-field {
 
 
 
-  /**
-   * FOOTER
-   */
-
   .footer .container {
     display: flex;
     justify-content: space-between;
@@ -1279,16 +1145,9 @@ textarea.input-field {
 
 
 
-/**
- * responsive for larger than 1200px screen
- */
-
 @media (min-width: 1200px) {
 
-  /**
-   * REUSED STYLE
-   */
-
+ 
   .container { max-width: 1150px; }
 
   .section-title { max-width: 460px; }
@@ -1296,20 +1155,12 @@ textarea.input-field {
 
 
 
-  /**
-   * HERO
-   */
-
   .hero-social-list { left: -80px; }
 
   .scroll-down { right: -80px; }
 
 
 
-
-  /**
-   * ABOUT
-   */
 
   .about-banner { max-width: 450px; }
 
